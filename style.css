@@ -1,0 +1,34 @@
+body {
+    text-align: center;
+}
+h1{
+    padding: 1rem;
+    font-size: 3rem;
+    color: rgb(192, 88, 88);
+
+}
+.table {
+    display: grid;
+    justify-content: center;
+    
+}
+.table_board {
+    display: grid;
+    background-color: black;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+    width: 50vw;
+    height: 65vh;
+}
+.board_data{
+    background-color: white;
+}
+.button {
+    border-radius: 10px;
+    font-size: 1.5rem;
+    background-color: rgb(167, 173, 211);
+    padding: .5rem;
+    margin: 2rem auto;
+    width: 50%;
+}
