@@ -49,6 +49,7 @@ function color (event){
             event.target.style.backgroundColor ="orange";
             title.innerHTML = "Blue's turn"
             event.target.innerHTML = 'x';
+            event.target.classList.add("board_data_style");
             checkWinner();
             currentPlayer = 1;
            
@@ -58,6 +59,7 @@ function color (event){
             player2.push(parseInt(p2Score));
             event.target.style.backgroundColor ="blue";
             event.target.innerHTML = 'o';
+            event.target.classList.add("board_data_style");
             title.innerHTML = "Orange's turn";
             checkWinner();
             currentPlayer = 0;
