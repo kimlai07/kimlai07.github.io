@@ -103,7 +103,6 @@ function checkTie(){
     return isTie;
 }
 function changeTextToIsTie(){
-<<<<<<< HEAD
     title.innerText = "It's a tie, try again"
 }
 
