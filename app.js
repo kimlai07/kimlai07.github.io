@@ -103,7 +103,7 @@ function checkTie(){
     return isTie;
 }
 function changeTextToIsTie(){
-    title.innerText = "It's a tie, try again"
+    title.innerText = "It's a tie, try again";
 }
 
 startGame();
