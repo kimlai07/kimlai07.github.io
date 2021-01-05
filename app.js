@@ -18,6 +18,7 @@ const winningValue = [
     [2,5,8]
 ];
 function checkWinner(){
+
     for ( let i=0; i<winningValue.length; i++){
           const isWin =  winningValue[i].every(function(positionInWinningCombination){
               if(currentPlayer == 0){
@@ -39,6 +40,10 @@ function checkWinner(){
         }
         
     }
+   const isTie = checkTie();
+   if(isTie){
+    changeTextToIsTie();
+   }
 }
 
 function color (event){
@@ -93,6 +98,12 @@ function reset (){
     startGame();
 }
 
+function checkTie(){
+    const isTie = [...board_data].every(({innerText}) => innerText.length !==0);
+    return isTie;
+}
+function changeTextToIsTie(){
+    title.innerText = "It's tied, you dumb bitch try again"
+}
 
 startGame();
-
